@@ -1,0 +1,341 @@
+cex/csll/cyclic_list_unsafe.c: POSSIBLY UNSAFE
+cex/csll/destroy_iter_rem_unsafe.c: POSSIBLY UNSAFE
+cex/csll/destroy_test_dangling_unsafe.c: POSSIBLY UNSAFE
+cex/csll/fill_walk_drain_unsafe.c: POSSIBLY UNSAFE
+cex/csll/remove2_unsafe.c: POSSIBLY UNSAFE
+cex/csll/remove_for2_unsafe.c: POSSIBLY UNSAFE
+cex/csll/remove_for_unsafe.c: POSSIBLY UNSAFE
+cex/csll/remove_unsafe.c: POSSIBLY UNSAFE
+cex/havoc/list_iterate_unsafe.c: POSSIBLY UNSAFE
+cex/kmdf/CromData_trace_unsafe.c: POSSIBLY UNSAFE
+cex/kmdf/allocate_resources_insert_head_list_unsafe.c: POSSIBLY UNSAFE
+cex/kmdf/attach_buffer_insert_head_list_unsafe.c: POSSIBLY UNSAFE
+cex/kmdf/cleanup_asyncaddressdata_remove_head_list_unsafe.c: POSSIBLY UNSAFE
+cex/kmdf/cleanup_cromdata_remove_head_list_unsafe.c: POSSIBLY UNSAFE
+cex/kmdf/cleanup_isochresourcedata_remove_head_list_unsafe.c: POSSIBLY UNSAFE
+cex/kmdf/cromdata_add_remove_unsafe.c: POSSIBLY UNSAFE
+cex/kmdf/free_resources_remove_entry_list_unsafe.c: POSSIBLY UNSAFE
+cex/kmdf/is_on_list_flat_unsafe.c: POSSIBLY UNSAFE
+cex/kmdf/set_local_properties_plist_entry_unsafe.c: POSSIBLY UNSAFE
+cex/simple/changing_truth_value_unsafe.c: POSSIBLY UNSAFE
+cex/simple/changing_truth_value_unsafe_garbage.c: POSSIBLY UNSAFE
+cex/simple/complicated_safe.c: SAFE
+cex/simple/complicated_unsafe.c: POSSIBLY UNSAFE
+cex/simple/maybe_malloc_then_write.c: POSSIBLY UNSAFE
+cex/simple/no_loops_unsafe.c: POSSIBLY UNSAFE
+cex/simple/nontrivial_list_2_unsafe.c: POSSIBLY UNSAFE
+cex/simple/nontrivial_list_2_unsafe_garbage.c: POSSIBLY UNSAFE
+cex/simple/nontrivial_list_unsafe.c: POSSIBLY UNSAFE
+cex/simple/serious_unsafe.c: POSSIBLY UNSAFE
+cex/simple/simple_list_unsafe.c: POSSIBLY UNSAFE
+cex/simple/simple_loop_unsafe.c: POSSIBLY UNSAFE
+cex/simple/simple_loop_unsafe_garbage.c: POSSIBLY UNSAFE
+cex/simple/two_loops_unsafe.c: POSSIBLY UNSAFE
+cex/simple/very_simple_unsafe.c: POSSIBLY UNSAFE
+cex/simple/very_simple_unsafe_garbage_4.c: POSSIBLY UNSAFE
+cex/simple/very_simple_unsafe_garbage_easy.c: POSSIBLY UNSAFE
+cex/simple/very_simple_unsafe_garbage_even_less_easy.c: POSSIBLY UNSAFE
+cex/simple/very_simple_unsafe_garbage_less_easy.c: POSSIBLY UNSAFE
+cex/sll/append_fs_unsafe.c: POSSIBLY UNSAFE
+cex/sll/append_ret_fs_unsafe.c: POSSIBLY UNSAFE
+cex/sll/append_ret_unsafe.c: POSSIBLY UNSAFE
+cex/sll/append_unsafe.c: POSSIBLY UNSAFE
+cex/sll/copy_fs_unsafe.c: POSSIBLY UNSAFE
+cex/sll/copy_leak_unsafe.c: POSSIBLY UNSAFE
+cex/sll/copy_unsafe.c: POSSIBLY UNSAFE
+cex/sll/create_body_unsafe.c: POSSIBLY UNSAFE
+cex/sll/create_kernel_unsafe.c: POSSIBLY UNSAFE
+cex/sll/create_via_tmps_unsafe.c: POSSIBLY UNSAFE
+cex/sll/destroy_sll_unsafe.c: POSSIBLY UNSAFE
+cex/sll/filter_fs_unsafe.c: POSSIBLY UNSAFE
+cex/sll/filter_ret_unsafe.c: POSSIBLY UNSAFE
+cex/sll/filter_unsafe.c: POSSIBLY UNSAFE
+cex/sll/insertion_sort_inlined_lead_unsafe.c: POSSIBLY UNSAFE
+cex/sll/insertion_sort_inlined_unsafe.c: POSSIBLY UNSAFE
+cex/sll/insertion_sort_unsafe.c: POSSIBLY UNSAFE
+cex/sll/list_of_objects.c: POSSIBLY UNSAFE
+cex/sll/list_of_objects_unsafe.c: POSSIBLY UNSAFE
+cex/sll/remove_ret_unsafe.c: POSSIBLY UNSAFE
+cex/sll/reverse_div2_unsafe.c: POSSIBLY UNSAFE
+cex/sll/reverse_div3_unsafe.c: POSSIBLY UNSAFE
+cex/sll/reverse_div4_unsafe.c: POSSIBLY UNSAFE
+cex/sll/reverse_div_unsafe.c: POSSIBLY UNSAFE
+cex/sll/reverse_leak2_unsafe.c: POSSIBLY UNSAFE
+cex/sll/reverse_leak_unsafe.c: POSSIBLY UNSAFE
+cex/sll/reverse_negative_sublists_unsafe.c: POSSIBLY UNSAFE
+cex/sll/reverse_ret_unsafe.c: POSSIBLY UNSAFE
+cex/sll/reverse_seg_cyclic_unsafe.c: POSSIBLY UNSAFE
+cex/sll/reverse_seg_unsafe.c: POSSIBLY UNSAFE
+cex/sll/reverse_unsafe.c: POSSIBLY UNSAFE
+cex/sll/splice_unsafe.c: POSSIBLY UNSAFE
+cex/sll/traverse3_unsafe.c: POSSIBLY UNSAFE
+cex/sll/traverse_1lists_unsafe.c: POSSIBLY UNSAFE
+cex/sll/traverse_2lists_unsafe.c: POSSIBLY UNSAFE
+cex/sll/traverse_5lists_unsafe.c: POSSIBLY UNSAFE
+cex/sll/traverse_seg_unsafe.c: POSSIBLY UNSAFE
+cex/sll/traverse_twice_unsafe.c: POSSIBLY UNSAFE
+cex/sll/traverse_unsafe.c: POSSIBLY UNSAFE
+cex/sll_rec/create_rec2_unsafe.c: POSSIBLY UNSAFE
+cex/sll_rec/create_rec3_unsafe.c: POSSIBLY UNSAFE
+cex/sll_rec/create_rec_unsafe.c: POSSIBLY UNSAFE
+cex/sll_rec/find_rec_unsafe.c: POSSIBLY UNSAFE
+cex/sll_rec/insertion_sort_rec_unsafe.c: POSSIBLY UNSAFE
+cex/sll_rec/merge_rec_unsafe.c: POSSIBLY UNSAFE
+cex/sll_rec/reverse_app_ret_rec_unsafe.c: POSSIBLY UNSAFE
+cex/sll_rec/reverse_rec_unsafe.c: POSSIBLY UNSAFE
+cex/sll_rec/traverse_rec_nondet_unsafe.c: POSSIBLY UNSAFE
+cex/sll_rec/traverse_rec_unsafe.c: POSSIBLY UNSAFE
+cex/sll_rec/traverse_seg_rec_nondet_unsafe.c: POSSIBLY UNSAFE
+cex/sll_rec/traverse_seg_rec_unsafe.c: POSSIBLY UNSAFE
+csll/cyclic_list.c: SAFE, MAY LEAK
+csll/destroy.c: SAFE
+csll/destroy_iter_rem.c: SAFE
+csll/destroy_test_dangling.c: SAFE
+csll/fill_walk_drain.c: SAFE
+csll/remove.c: SAFE
+csll/remove2.c: SAFE, MAY LEAK
+csll/remove_for.c: SAFE
+csll/remove_for2.c: SAFE
+csll/remove_leak.c: SAFE, MAY LEAK
+csll/remove_leak_nd_ret.c: SAFE, MAY LEAK
+dev/frec.c: SAFE
+dev/irreducible.c: SAFE
+dev/store.c: SAFE, MAY LEAK
+dev/straight.c: SAFE, MAY LEAK
+dev/straight_func.c: SAFE
+havoc/list_iterate.c: SAFE, MAY LEAK
+kmdf/1394/CromData_trace.c: POSSIBLY UNSAFE
+kmdf/1394/address_range_plist_entry.c: SAFE, MAY LEAK
+kmdf/1394/allocate_resources_insert_head_list.c: SAFE, MAY LEAK
+kmdf/1394/attach_buffer_insert_head_list.c: SAFE, MAY LEAK
+kmdf/1394/attach_completion_routine_remove_entry_list.c: SAFE, MAY LEAK
+kmdf/1394/callback_remove_entry_list.c: SAFE, MAY LEAK
+kmdf/1394/cleanup_asyncaddressdata_remove_head_list.c: SAFE
+kmdf/1394/cleanup_cromdata_remove_head_list.c: SAFE
+kmdf/1394/cleanup_isochdetachdata_remove_head_list.c: SAFE
+kmdf/1394/cleanup_isochresourcedata_remove_head_list.c: SAFE
+kmdf/1394/cromdata_add_remove.c: SAFE, MAY LEAK
+kmdf/1394/cromdata_add_remove_fs.c: SAFE, MAY LEAK
+kmdf/1394/free_resources_remove_entry_list.c: SAFE, MAY LEAK
+kmdf/1394/initialize_list_head.c: SAFE
+kmdf/1394/is_on_list_flat.c: SAFE, MAY LEAK
+kmdf/1394/is_on_list_via_devext.c: SAFE, MAY LEAK
+kmdf/1394/isoch_detach_data_shares_devext.c: SAFE
+kmdf/1394/set_local_properties_plist_entry.c: SAFE, MAY LEAK
+kmdf/1394/timeout_remove_entry_list.c: SAFE, MAY LEAK
+kmdf/1394/wdf_device_create.c: SAFE
+kmdf/1394/wdf_device_init_set_pnp_power_event_callbacks.c: SAFE
+kmdf/1394/wdf_driver_config_init.c: SAFE
+kmdf/1394/wdf_driver_create.c: SAFE, MAY LEAK
+kmdf/1394/wdf_object_attributes_init_context_type.c: SAFE
+kmdf/1394/wdf_pnppower_event_callbacks.c: SAFE
+kmdf/microtests/WdfStringCreate_ObjectDelete.c: SAFE
+kmdf/toaster/bus/dynamic/dynamic.c: SAFE
+kmdf/toaster/bus/static/static.c: SAFE
+kmdf/toaster/bus/static_fail1/static_fail1.c: POSSIBLY UNSAFE
+kmdf/toaster/func/featured/featured.c: SAFE
+kmdf/toaster/func/simple/simple.c: SAFE
+kmdf/toaster/func/simple_fail1/simple_fail1.c: POSSIBLY UNSAFE
+multi/link/link.c: SAFE
+other/ExAllocatePoolWithTag.c: SAFE, MAY LEAK
+other/addr_of_global_struct.c: SAFE
+other/address_arith.c: POSSIBLY UNSAFE
+other/address_of.c: SAFE
+other/address_of2.c: SAFE
+other/address_of_global.c: SAFE
+other/address_of_malloced_struct.c: SAFE
+other/address_of_struct.c: SAFE
+other/address_taken_assigned_by_return.c: SAFE
+other/alloc_object_into_array.c: SAFE
+other/anonymous_union.c: SAFE
+other/array_access.c: SAFE
+other/array_arguments_heap.c: SAFE
+other/array_arguments_stack.c: SAFE
+other/array_in_formal.c: SAFE
+other/array_of_guids.c: SAFE
+other/array_of_structs.c: SAFE
+other/assume_assert.c: POSSIBLY UNSAFE
+other/backjump.c: SAFE
+other/bitfield.c: SAFE
+other/bool_to_int.c: SAFE
+other/call.c: SAFE
+other/call_arg.c: SAFE
+other/call_arg_unique.c: SAFE
+other/cast.c: POSSIBLY UNSAFE
+other/cast_1394.c: SAFE
+other/cast_bt_types.c: POSSIBLY UNSAFE
+other/cast_guard_implicit.c: SAFE
+other/cast_guard_int.c: SAFE
+other/cast_guard_ptr.c: SAFE
+other/compound_assignment.c: SAFE
+other/containing_record.c: SAFE
+other/control_guard.c: SAFE
+other/dead_code.c: SAFE
+other/deref_NULL2.c: POSSIBLY UNSAFE
+other/deref_ZERO.c: POSSIBLY UNSAFE
+other/deref_via_call.c: SAFE
+other/deref_via_call2.c: SAFE, MAY LEAK
+other/dynamic_size_array.c: SAFE
+other/empty.c: SAFE
+other/forwdjump.c: SAFE
+other/free_free.c: POSSIBLY UNSAFE
+other/free_local.c: POSSIBLY UNSAFE
+other/fun_arg_order.c: SAFE
+other/fused_assign_1.c: SAFE
+other/fused_assign_2.c: SAFE
+other/get_untyped_buf.c: SAFE
+other/global_struct_fields.c: SAFE
+other/global_var.c: SAFE
+other/globals_per_proc.c: SAFE
+other/icall.c: SAFE
+other/icall_with_global1.c: SAFE
+other/icall_with_global2.c: SAFE
+other/icall_with_global3.c: SAFE
+other/icall_with_global4.c: SAFE
+other/if.c: SAFE
+other/if_integer.c: SAFE
+other/if_pointer.c: POSSIBLY UNSAFE
+other/ifguard.c: SAFE
+other/inline_args.c: SAFE
+other/inline_criteria.c: SAFE
+other/mainret.c: SAFE
+other/malloc.c: SAFE, MAY LEAK
+other/malloc_free.c: SAFE
+other/malloc_free_struct.c: SAFE
+other/malloc_struct.c: SAFE, MAY LEAK
+other/multireturn.c: SAFE
+other/nested_struct.c: SAFE, MAY LEAK
+other/pointer_subtraction.c: SAFE
+other/reachable_globals.c: SAFE, MAY LEAK
+other/rep_3_f_int_star.c: SAFE, MAY LEAK
+other/rep_4_f_int_star.c: SAFE, MAY LEAK
+other/rep_4_f_void_star.c: SAFE, MAY LEAK
+other/return.c: SAFE
+other/return_struct.c: SAFE
+other/sized_array_simple.c: SAFE
+other/small_ites.c: SAFE
+other/small_ites16.c: SAFE
+other/small_ites32.c: SAFE
+other/small_ites4.c: SAFE
+other/small_ites8.c: SAFE
+other/store_to_0x0.c: POSSIBLY UNSAFE
+other/store_to_0x0_fix.c: POSSIBLY UNSAFE
+other/straightline.c: SAFE
+other/struct.c: SAFE, MAY LEAK
+other/struct_all.c: SAFE
+other/struct_argument.c: SAFE, MAY LEAK
+other/struct_argument_esp_fail.c: SAFE, MAY LEAK
+other/struct_argument_cl_fail.c: SAFE, MAY LEAK
+other/struct_array_copy.c: SAFE
+other/struct_assign_1.c: SAFE
+other/struct_assign_2.c: SAFE
+other/struct_assign_3.c: SAFE
+other/struct_assign_4.c: SAFE
+other/struct_assign_5.c: SAFE
+other/struct_field.c: SAFE, MAY LEAK
+other/struct_init.c: SAFE
+other/struct_local.c: SAFE
+other/struct_pass.c: SAFE
+other/switch.c: SAFE
+other/two_elt_array_fptr.c: SAFE
+other/two_elt_array_global.c: SAFE
+other/two_elt_array_local.c: SAFE
+other/unused_global.c: SAFE
+other/unused_global_2.c: SAFE
+other/update_global_var.c: SAFE
+other/while.c: SAFE
+other/while2loads.c: SAFE, MAY LEAK
+other/write_to_busInfo_struct.c: SAFE
+other/writer_reader.c: SAFE
+sll/append.c: SAFE
+sll/append_fs.c: SAFE
+sll/append_ret.c: SAFE
+sll/append_ret_fs.c: SAFE
+sll/copy.c: SAFE
+sll/copy_leak.c: SAFE, MAY LEAK
+sll/create.c: SAFE, MAY LEAK
+sll/create_body.c: SAFE
+sll/create_fs.c: SAFE
+sll/create_fs_via_tmps.c: SAFE
+sll/create_kernel.c: SAFE, MAY LEAK
+sll/create_seg.c: SAFE, MAY LEAK
+sll/create_via_tmps.c: SAFE
+sll/destroy.c: SAFE
+sll/destroy_seg.c: SAFE
+sll/destroy_seg_leak.c: SAFE, MAY LEAK
+sll/filter.c: SAFE
+sll/filter_fs.c: SAFE
+sll/filter_ret.c: SAFE
+sll/find.c: SAFE
+sll/find_ret.c: SAFE
+sll/insert.c: SAFE
+sll/insert_ret.c: SAFE
+sll/insertion_sort.c: SAFE
+sll/insertion_sort_inlined.c: SAFE
+sll/insertion_sort_inlined_leak.c: SAFE, MAY LEAK
+sll/print.c: SAFE
+sll/print_fs.c: SAFE
+sll/remove_ret.c: SAFE
+sll/reverse.c: SAFE
+sll/reverse_div.c: SAFE
+sll/reverse_div2.c: SAFE
+sll/reverse_div3.c: SAFE, MAY LEAK
+sll/reverse_div4.c: SAFE, MAY LEAK
+sll/reverse_div5.c: POSSIBLY UNSAFE
+sll/reverse_leak.c: SAFE, MAY LEAK
+sll/reverse_leak2.c: SAFE, MAY LEAK
+sll/reverse_negative_sublists.c: SAFE
+sll/reverse_negative_sublists1.c: SAFE
+sll/reverse_negative_sublists1_leak.c: SAFE, MAY LEAK
+sll/reverse_negative_sublists1_unsafe.c: POSSIBLY UNSAFE
+sll/reverse_negative_sublists2.c: SAFE
+sll/reverse_negative_sublists2_leak.c: SAFE, MAY LEAK
+sll/reverse_negative_sublists2_unsafe.c: POSSIBLY UNSAFE
+sll/reverse_negative_sublists_fs.c: SAFE
+sll/reverse_ret.c: SAFE
+sll/reverse_seg.c: SAFE
+sll/reverse_seg_cyclic.c: SAFE, MAY LEAK
+sll/splice.c: SAFE
+sll/splice_fs.c: SAFE
+sll/straightline.c: SAFE, MAY LEAK
+sll/traverse.c: SAFE
+sll/traverse2.c: SAFE
+sll/traverse3.c: SAFE
+sll/traverse4.c: SAFE
+sll/traverse5.c: SAFE
+sll/traverse_1lists.c: SAFE
+sll/traverse_2lists.c: SAFE
+sll/traverse_3lists.c: SAFE
+sll/traverse_4lists.c: SAFE
+sll/traverse_5lists.c: SAFE
+sll/traverse_seg.c: SAFE
+sll/traverse_seg2.c: SAFE, MAY LEAK
+sll/traverse_twice.c: SAFE
+sll_rec/append_ret_rec.c: SAFE, MAY LEAK
+sll_rec/create_rec.c: SAFE, MAY LEAK
+sll_rec/create_rec2.c: SAFE, MAY LEAK
+sll_rec/create_rec3.c: SAFE, MAY LEAK
+sll_rec/destroy_rec.c: SAFE
+sll_rec/find_rec.c: SAFE, MAY LEAK
+sll_rec/insert_rec.c: SAFE, MAY LEAK
+sll_rec/insert_ret_rec.c: SAFE, MAY LEAK
+sll_rec/insertion_sort_rec.c: SAFE, MAY LEAK
+sll_rec/merge_rec.c: SAFE, MAY LEAK
+sll_rec/merge_rec1.c: SAFE, MAY LEAK
+sll_rec/merge_sort.c: SAFE, MAY LEAK
+sll_rec/quick_sort.c: SAFE, MAY LEAK
+sll_rec/remove_rec.c: SAFE, MAY LEAK
+sll_rec/remove_ret_rec.c: SAFE, MAY LEAK
+sll_rec/reverse_app_ret_rec.c: SAFE, MAY LEAK
+sll_rec/reverse_rec.c: SAFE, MAY LEAK
+sll_rec/reverse_ret_rec.c: SAFE, MAY LEAK
+sll_rec/splice_rec.c: SAFE, MAY LEAK
+sll_rec/split.c: SAFE, MAY LEAK
+sll_rec/traverse_rec.c: SAFE, MAY LEAK
+sll_rec/traverse_rec_nondet.c: SAFE, MAY LEAK
+sll_rec/traverse_seg_rec.c: SAFE, MAY LEAK
+sll_rec/traverse_seg_rec_nondet.c: SAFE, MAY LEAK
+ssa/branch.c: SAFE
+ssa/dloop.c: SAFE
+ssa/fig-19_4.c: SAFE
+ssa/straightline.c: SAFE

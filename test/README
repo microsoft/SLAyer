@@ -1,0 +1,50 @@
+Instructions for testing
+
+- To run tests with default settings
+    $ make test
+
+- To run tests in parallel
+    $ make -j 4 test
+
+- To compile tests and then analyze them in parallel
+    $ make compile; make -j 4 test
+
+- To use <exe> to run tests
+    $ make SLAYER_EXE=<exe> ...
+
+- To run tests in <dir1> ... <dirN>
+    $ make DIR="<dir1> ... <dirN>" ...
+
+- To pass <args> to slayer, execute 'slayer -h' for possible <args>
+    $ make ARG=<args> ...
+
+- To limit test time usage
+    $ make TIMEOUT=<secs> ...
+
+- To limit test memory usage
+    $ make MEMOUT=<secs> ...
+
+- To report the known incorrect results
+    $ make bugs
+
+- To report the difference between actual and expected results
+    $ make report
+
+- To remove result files, forcing tests to be rerun
+    $ make cleanout
+
+- To remove result files for tests that exceeded the time limit
+    $ make cleanTO
+
+- To remove result files for tests that exceeded the memory limit
+    $ make cleanMO
+
+- To remove result files for tests that exceeded the analysis limit (set with -limit)
+    $ make cleanHL
+
+- To remove .sil files, forcing tests to be recompiled (test.sil is rebuilt from test.c
+  only if either test.c or frontend.exe has changed)
+    $ make cleansil
+
+- To remove all generated files
+    $ make clean

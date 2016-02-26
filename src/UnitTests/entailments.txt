@@ -1,0 +1,189 @@
+tt |/- emp
+emp |/- 0!=0
+E!=F * tt |/- emp
+emp |/- E y . x==y+z
+emp |/- E x,y . x+y==y * x!=0
+a->{} |/- 0!=1
+emp |/- x==y
+emp |/- E x,f . x.t.f==x.eps.f
+emp |/- E x,f,g . x.t.f==x.g.f
+emp |/- x==0
+x==x |/- x==0
+emp |/- 1+2==5
+emp |/- x+1==1
+emp |/- x!=1
+emp |/- x+2==1
+x->{} |/- x->{f:y}
+x->{} |/- x->{f:y} * y!=0
+x->{} * y->{} |/- x->{h:H} * y->{h:H}
+emp |/- E e0,f0,e1,f1 . dll(k;e0;f0;e1;f1)
+e0!=e1 |/- E k,f0,f1 . dll(k;e0;f0;e1;f1)
+emp |/- E k,f0,f1 . dll(k;e0;f0;e1;f1)
+emp |/- E k,e0,e1 . dll(k;e0;f0;e1;f1)
+emp |/- E k,e0,f0,e1,f1 . dll(k;e0;f0;e1;f1) * e0!=e1
+
+e0->{B:f0,F:e1} |/- E f1 . dll(k;e0;f0;e1;f1)
+e0->{B:f,F:e1} |/- E k,f1 . dll(k;e0;f0;e1;f1)
+e1!=f1 * e0->{B:f0,F:e1} |/- E k . dll(k;e0;f0;e1;f1)
+
+dllh(h;k;e0;f0;e1;f1) = ls((\a,b,c,d. a==d * a->{B:b,F:c,H:h}); k;e0;f0;e1;f1)
+
+e0->{B:f0,F:e1} * e2->{B:f2,F:e3} |/- E k0,k1,h . dllh(h;k0;e0;f0;e1;e0) * dllh(h;k1;e2;f2;e3;e2)
+
+dll(k;e0;f0;e1;f1) * e1->{B:f1,F:e2} |/- E f2 . dll(k1;e0;f0;e2;f2)
+dll(k;e0;f0;e1;f1) * e1->{B:f1,F:e2} |/- E k1 . dll(k1;e0;f0;e2;f2)
+dll(k;e0;f0;e1;f1) * e1->{B:f1,F:e2} * f2!=e1 |/- E k1 . dll(k1;e0;f0;e2;f2)
+dll(k;e0;f0;e1;f1) * e1->{B:f1,F:e2} |/- E k1 . f2!=e1 * dll(k1;e0;f0;e2;f2)
+dll(k0;e0;f0;e0;f0) |/- E k1 . k0!=k1 * dll(k1;e0;f1;e0;f1)
+
+emp |- emp
+e==e |- emp
+emp |- E x,y . x!=y
+emp |- E k . x==k+x * k==0
+emp |- E x . x!=0+1
+emp |- E x,y . x==0 * y==y+x
+x+y==y |- x==0
+emp |- E x,y . x+y==y
+tt \ emp = tt
+e!=e |- ff
+e!=f * e==f |- ff
+e!=1 * e==1 |- ff
+e!=e * tt |- emp
+x!=0 |- 0!=x+1
+emp |- tt
+
+dll(k;x;y;z;0.) * x!=z |- ff
+dll(k;x;y;z;w) * x!=z |- k!=0 * tt
+dll(k;0.;y;0.;y) |- emp
+e!=f |- e!=f
+f!=e |- e!=f
+e!=f |- f!=e
+dll(k;e0;f0;e1;f1) |- dll(k;e0;f0;e1;f1)
+e!=f * g!=f |- f!=e * tt
+emp |- E x . x==x
+e==g * g==f |- e==f
+emp |- E x . x.f==x.eps.f
+emp |- E x,t . x.f==x.eps.t = [f/t]
+emp |- E x,t . x.t==x.eps.f = [f/t]
+emp |- E x,t . x.t.f==x.g.f = [g/t]
+emp |- E x,t . x.t.f==x.g.f = [g/t]
+emp |- E x . x==0
+x->{} * y->{} * tt |- y->{} * tt
+emp |- 0!=0+1
+x->{} |- x->{}
+x->{F:f} |- x->{}
+x->{F:f} * f->{} |- E z . x->{F:z} * z->{}
+x->{F:f} * f!=h |- E g . x->{F:g} * g!=h
+x->{} |- E y . y->{}
+x->{} |- E y . y.->{}
+dll(k;e0;f0;e2;f2) * k!=0 |- E k1,e1 . e0->{B:f0,F:e1} * dll(k1;e1;e0;e2;f2)
+dll(1;e0;f0;e2;f2) |- E e1 . e0->{B:f0,F:e1}
+dll(k;e0;f0;e2;f2) * k!=0 |- E k1,f1 . dll(k1;e0;f0;f2;f1) * f2->{B:f1,F:e2}
+emp |- E e0,f0,e1,f1 . dll(0;e0;f0;e1;f1)
+emp |- E k,e0,f0,e1,f1 . dll(k;e0;f0;e1;f1)
+emp |- E k,f0,e1,f1 . dll(k;e0;f0;e1;f1)
+emp |- E k,e0,f0,e1 . dll(k;e0;f0;e1;f1)
+emp |- E k,e0,f0,e1,f1 . dll(k;e0;f0;e1;f1) * e0!=f1
+dll(0;w0;x0;y0;z0) |- E w1,x1,y1,z1 . dll(0;w1;x1;y1;z1)   (cyclic) empty |- (cyclic) empty
+e0->{B:f0,F:e1} |- E k,f1 . dll(k;e0;f0;e1;f1)
+e0->{B:f,F:e1} |- E k,f0,f1 . dll(k;e0;f0;e1;f1)
+k==1 * e0->{B:f0,F:e1} |- E f1 . dll(k;e0;f0;e1;f1)
+e0->{B:f0,F:e1} * e1->{B:e0,F:e2} |- E k . dll(k;e0;f0;e2;e1)
+f1->{B:f0,F:e1} |- E k,e0 . dll(k;e0;f0;e1;f1)
+dll(k0;e0;f0;e1;f1) |- E k1 . dll(k1;e0;f0;e1;f1)
+dll(k;e0;f0;e1;f1) * e1->{B:f1,F:e2} |- E k1,f2 . dll(k1;e0;f0;e2;f2)
+dll(k;e0;f0;e1;f1) * e1->{B:f1,F:e2} * f2==e1 |- E k1 . dll(k1;e0;f0;e2;f2)
+dll(k;e0;f0;e1;f1) * e1->{B:f1,F:e2} |- E k1 . dll(k1;e0;f0;e2;f2) * f2==e1
+dll(k;e0;f0;e1;f1) |- dll(k;e0;f0;e1;f1)
+dll(k0;e0;f0;e1;f1) |- E k1 . dll(k1;e0;f0;e1;f1) * k0==k1
+dll(k;w0;x0;y0;z0) |- E w1,z1 . dll(k;w1;x0;y0;z1)
+e0->{B:f0,F:e1} * dll(k0;e1;e0;e2;f2) |- E k1,e0' . dll(k1;e0';f0;e2;f2)
+dll(k0;e0;f0;e0;f0) |- E e1 . dll(k0;e1;f0;e1;f0)
+             j.->{:g} * dll(_;_.;0.;f.;g) * f.->{B:g,F:e.} * dll(a;e.;f.;0.;_.) * a!=0 * g!=0. * h.->{:0.} * i.->{}
+|- E n,o,p . j.->{:p} * dll(_;_.;0.;o.;p) * dll(n;o.;p;0.;_.) * n!=0 * p!=0. * h.->{:0.} * i.->{}
+
+dll'(k;e0;f0;e1;f1) = ls((\a,b,c,d. a==d * a->{B:c,F:b}); k;e0;f0;e1;f1)
+
+dll'(e+1;f.;g.;0.;h.) |- E l,m,n,o . dll'(l+1;m.;n.;0.;o.)
+dll'(d+1;e.;f.;g.;h) * dll'(i+1;g.;h;j.;k.) |- E o . dll'(1+_;o.;h;j.;k.) * dll'(1+_;e.;f.;o.;h)
+
+sll(k;e0;e1) = ls((\a,b,c,d. a==d * a->{F:c}); k;e0;;e1;)
+
+sll(k;x;;y;) * x!=y |- E q . sll(_;x;;q;) * q->{F:y}
+
+dll(k;x;y;x;y) * k!=0 |- E z . dll(k;z;x;z;x)
+y->{} * dll(k0;z;y;x;z) * dll(k1;z;x;y;z) |- x->{} * tt
+
+dll(1+_;e.;g.;g.;f.) |- E n,o . dll'(1+_;n.;g.;g.;o.)
+
+e0->{F:e1} |- sll(1;e0;e1)
+e0->{F:e1} |- E k . sll(k;e0;e1)
+e0->{F:e1} * e1->{F:e2} |- E k . sll(k;e0;e2)
+e0->{F:e1} * sll(k;e1;e2) |- E k1 . sll(k1;e0;e2)
+sll(k;e0;e1) * e1->{F:e2} |- E k1 . sll(k1;e0;e2)
+sll(k0;e0;e1) * sll(k1;e1;e2) |- sll(k0+k1;e0;e2)
+sll(k;e0;e1) * e1->{F:e2} |- E k1,x . e0->{F:x} * sll(k1;x;e2)
+sll(k0;e0;e1) * e1->{F:e2} * sll(k1;e2;e0) |- sll(k0+k1+1,e1,e1)
+k!=0 * sll(k,e0,e0) |- E k1,x . e0->{F:x} * sll(k1;x;e0)
+y!=z * sll(k0;x;y) * sll(k1;x;z) |- x->{} * tt
+
+
+emp |- emp
+emp |/- x->{}
+x->{} |/- emp
+x->{} |- x->{}
+x->{} |/- y->{}
+x->{} |/- x->{F:y}
+x->{F:y} |- x->{}
+x->{F:y} |- x->{F:y}
+x->{F:y} |/- x->{F:z}
+x->{} * y->{} |- y->{} * x->{}
+
+
+Note: the following are for the acyclic ls predicate:
+
+emp |- ls(x,x)
+ls(x,x) |- emp
+
+x->{F:0} |- ls(x,0)
+ls(x,0) |/- x->{F:0}
+x->{F:y} |/- ls(x,y)
+x!=y * x->{F:y} |- ls(x,y)
+
+x->{F:y} * y->{F:z} |- ls(x,y) * y->{F:z}
+x->{F:y} * y->{F:0} |- ls(x,0)
+x->{F:y} * y->{F:z} |/- ls(x,z)
+
+x->{F:y} * ls(y,0) |- ls(x,0)
+x->{F:y} * ls(y,z) |/- ls(x,z)
+x!=z * x->{F:y} * ls(y,z) |- ls(x,z)
+x->{F:y} * ls(y,z) * z->{F:w} |- ls(x,z) * z->{F:w}
+z!=w * x->{F:y} * ls(y,z) * ls(z,w) |- ls(x,z) * ls(z,w)
+
+ls(x,y) * y->{F:0} |- ls(x,0)
+ls(x,y) * y->{F:z} |/- ls(x,z)
+ls(x,y) * y->{F:z} * z->{F:w} |- ls(x,z) * z->{F:w}
+z!=w * ls(x,y) * y->{F:z} * ls(z,w) |- ls(x,z) * ls(z,w)
+
+ls(x,y) * ls(y,0) |- ls(x,0)
+ls(x,y) * ls(y,z) |/- ls(x,z)
+ls(x,y) * ls(y,z) * z->{F:w} |- ls(x,z) * z->{F:w}
+z!=w * ls(x,y) * ls(y,z) * ls(z,w) |- ls(x,z) * ls(z,w)
+
+y!=z * ls(x,y) * ls(x,z) * ls(y,0) * ls(z,0) |- false
+y!=z * ls(x,y) * ls(x,z) * ls(y,w) * ls(z,w) |- (ls(x,z) * ls(z,x)) \/ (ls(x,y) * ls(y,x))
+y!=z * ls(x,y) * ls(x,z) * ls(y,u) * ls(z,v) |- (x==y==u * ls(x,z) * ls(z,v)) \/ (x==z==v * ls(x,y) * ls(y,u))
+
+ls(x,z) * y->{F:z} * ls(z,0) |- y->{} * ls(x,0)
+
+x!=y * ls(x,y) |- E z'. x->{F:z'} * ls(z',y)
+x!=0 * ls(x,y) |/- E z'. x->{F:z'} * ls(z',y)
+x!=y * ls(x,y) |- E z'. ls(x,z') * z'->{F:y}
+x!=y * ls(x,y) |- E w',z'. ls(x,w') * w'->{F:z'} * ls(z',y)
+
+ls(x,y) |- E z'. ls(x,z') * ls(z',y)
+x!=y * ls(x,y) |- E w',z'. w'!=z' * ls(x,w') * ls(w',z') * ls(z',y)
+
+x->{F:y} * ls(y,x) |- E z'. ls(x,z') * z'->{F:x}
+
+y!=z * ls(x,y) * ls(x,z) * ls(y,w) * ls(z,w) |- E v'. ls(x,v') * ls(v',x)
