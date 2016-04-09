@@ -35,7 +35,7 @@ let emit_pos buf {Position.dir; file; line} =
 (* The problem is we print bad variable names (for T2) if verbose is set *)
 let emit_var buf v = Printf.bprintf buf "%s" (Format.asprintf "%a" Var.fmt v)
 
-(* Note: " *)
+(* Note: ditto *)
 let emit_fld buf f = Printf.bprintf buf "%s" (Format.asprintf "%a" Fld.fmt f)
 
 let isternary e =
