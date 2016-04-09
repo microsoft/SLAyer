@@ -1,0 +1,3 @@
+[submodule "tools/Z3"]
+	path = tools/Z3
+	url = https://git.codeplex.com/forks/jjb/z3
