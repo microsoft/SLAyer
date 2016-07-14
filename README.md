@@ -50,14 +50,14 @@ Once we have received the signed CLA, we'll review the request.
 
 # Papers 
 
-SLAyer: Memory Safety for Systems-level Code Josh Berdine, Byron Cook, Samin Ishtiaq, in CAV, January 1, 2011. 
+Josh Berdine, Byron Cook, Samin Ishtiaq. SLAyer: Memory Safety for Systems-level Code. In CAV, January 1, 2011. 
 https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/201120CAV20SLAyer_20Memory20Safety20for20Systems-level20Code.pdf
 
-Diagnosing Abstraction Failure for Separation Logic-based Analyses Josh Berdine, Arlen Cox, Samin Ishtiaq, Christoph M. Wintersteiger, in Proceedings of the 24th International Conference on Computer Aided Verification (CAV), Springer, July 1, 2012.
+Josh Berdine, Arlen Cox, Samin Ishtiaq, Christoph M. Wintersteiger. Diagnosing Abstraction Failure for Separation Logic-based Analyses. In CAV, July 1, 2012.
 https://www.microsoft.com/en-us/research/publication/diagnosing-abstraction-failure-for-separation-logic-based-analyses/
 
-Resourceful Reachability as HORN-LA Josh Berdine, Nikolaj Bjorner, Samin Ishtiaq, Christoph M. Wintersteiger, in International Conference on Logic for Programming, Artificial Intelligence and Reasoning, Springer, December 15, 2013. 
+Josh Berdine, Nikolaj Bjorner, Samin Ishtiaq, Christoph M. Wintersteiger. Resourceful Reachability as HORN-LA. In CAV, December 15, 2013. 
 https://www.microsoft.com/en-us/research/publication/resourceful-reachability-as-horn-la/
 
-SeLoger: A Tool for Graph-Based Reasoning in Separation Logic Christoph Haase, Samin Ishtiaq, Joel Ouaknine, Matthew Parkinson, in Computer Aided Verification (CAV), January 1, 2013. 
+Christoph Haase, Samin Ishtiaq, Joel Ouaknine, Matthew Parkinson. SeLoger: A Tool for Graph-Based Reasoning in Separation Logic. In CAV, January 1, 2013. 
 https://www.microsoft.com/en-us/research/publication/seloger-a-tool-for-graph-based-reasoning-in-separation-logic/
